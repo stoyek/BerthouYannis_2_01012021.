@@ -3,14 +3,13 @@ header{
 	flex-wrap: wrap;
 	justify-content: flex-end;
 }
-.lien{
-
-}
-
-.result{
-
-}
 
 .housing{
-	
+	display: flex;
+	flex-wrap: wrap;
+}
+
+img{
+	height:;
+	width:;
 }
