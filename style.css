@@ -1,3 +1,12 @@
+
+
+
+
+section{
+	display: flex;
+	flex-wrap: wrap;
+}
+
 header{
 	display:flex;
 	flex-wrap: wrap;
@@ -12,4 +21,11 @@ header{
 img{
 	height:;
 	width:;
+}
+
+footer{
+	display: flex;
+	justify-content:space-around;
+	height: 220px;
+	background-color: #F2F2F2;
 }
