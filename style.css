@@ -1,6 +1,11 @@
+@font-face{
+	font-family: 'police';
+	src: url ('police/police.ttf') format('ttf');
+}
 
-
-
+*{
+	font-family: 'police';
+}
 
 section{
 	display: flex;
