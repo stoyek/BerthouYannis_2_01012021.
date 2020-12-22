@@ -5,32 +5,82 @@
 
 *{
 	font-family: 'police';
+	
 }
-
+body{
+	margin: 0;
+}
 section{
-	display: flex;
-	flex-wrap: wrap;
+	margin: 5%;
 }
 
 header{
 	display:flex;
-	flex-wrap: wrap;
-	justify-content: flex-end;
-}
-
-.housing{
-	display: flex;
-	flex-wrap: wrap;
+	justify-content: space-between;
 }
 
 img{
-	height:;
-	width:;
+	height: 50px;
+	width: 50px;
 }
 
-footer{
+
+
+
+
+.result-container{
 	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+
+
+.hot-container{
+	background-color: #F2F2F2;
+}
+.hot-container div{
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	justify-content: space-around;
+	background-color: red;
+}
+.hot-container div a{
+	margin: 10px;
+	background-color: #531d1d;;
+}
+
+
+
+
+
+.housing-container{
+	background-color: #F2F2F2;
+	width: 70%;
+}
+.housing-container div {
+	display: flex;
+	flex-wrap: wrap;
 	justify-content:space-around;
+	background-color: red;
+}
+.housing-container div a{
+	margin: 10px;
+	background-color: #531d1d;;
+}
+
+
+
+
+
+
+
+
+footer{
+	padding: 0 5%;
+	display: flex;
+	justify-content:space-between;
 	height: 220px;
 	background-color: #F2F2F2;
 }
