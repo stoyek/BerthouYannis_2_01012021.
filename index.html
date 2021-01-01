@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		<script src="https://kit.fontawesome.com/c5737b68a5.js" crossorigin="anonymous"></script>
 		<link rel="stylesheet" type="text/css" href="style.css">
 		<meta charset="utf-8">
 		<title>Réservia</title>
@@ -9,14 +10,17 @@
 	<body>
 		<header><!-------------------------------------- Logo + Nav! -->
 
-			<a class="logo" href="index.html"><img src="images/logo/Reservia@3x.png" alt="Acceuil"></a>
-			<nav>
+			<a class="logo" href="index.html">
+				<img src="images/logo/Reservia@3x.png" alt="Acceuil">
+			</a>
+
+			<div>
 				
-				<a href=""></a>
-				<a href=""></a>
-				<a href=""></a>
+				<a href="#">Hébergements</a>
+				<a href="#">Activités</a>
+				<a href="#">S'inscrire</a>
 				
-			</nav>
+			</div>
 		</header>
 
 		<section class="search"><!---------------------- Recherche de lieux -->
@@ -27,13 +31,13 @@
 			<div class="rechercher">
 			</div>
 
-			<div class="filter"><!---------------------- Filtrer la recherche -->
+			<div class="filter-section"><!---------------------- Filtrer la recherche -->
 				<h2>Filtres</h2>
 					<div>
-						<a href="#">Economique</a>
-						<a href="#">Familial</a>
-						<a href="#">Romantique</a>
-						<a href="#">Animaux autorisés</a>
+						<div class="filter">
+							<div class="icon"><i class="fas fa-money-bill-wave"></i></div>
+							<div class="eco">Economique</div>
+						</div>
 					</div>
 				<p>Plus de 500 logements sont disponibles dans cette ville</p>
 			</div>
@@ -52,6 +56,7 @@
 							<img src="images\hebergements\4_small\marcus-loke-WQJvWU_HZFo-unsplash.jpg">
 							<p class="nom">Auberge la Cannebière</p>
 							<p class="prix">Nuit à partie de 25€</p>
+							<i class="fas fa-star"></i>
 						</a>
 						<a href="lien.html">
 							<img src="images\hebergements\4_small\fred-kleber-gTbaxaVLvsg-unsplash.jpg">
@@ -64,22 +69,22 @@
 							<p class="prix">Nuit à partie de 76€</p>
 						</a>
 						<a href="lien.html">
-							<img src="images\hebergements\4_small\annie-spratt-Eg1qcIitAuA-unsplash.jpg">
+							<img src="images\hebergements\Resize\hotel de la mer.jpg">
 							<p class="nom">Hôtel de la mer</p>
 							<p class="prix">Nuit à partie de 46€</p>
 						</a>
-						<a href="lien.html"><img src="images\hebergements\4_small\nicate-lee-kT-ZyaiwBe0-unsplash.jpg">
+						<a href="lien.html">
+							<img src="images\hebergements\Resize\auberge le panier.jpg">
 							<p class="nom">Auberge le Panier</p>
 							<p class="prix">Nuit à partie de 23€</p>
 						</a>
-						<a href="lien.html"><img src="images\hebergements\4_small\febrian-zakaria-M6S1WvfW68A-unsplash.jpg">
+						<a href="lien.html">
+							<img src="images\hebergements\Resize\Hotel chez amina.jpg">
 							<p class="nom">Hôtel chez Amina</p>
 							<p class="prix">Nuit à partie de 96€</p>
 						</a>
 					</div>
-
 					<p>Afficher Plus</p>
-	
 				</div>
 	
 				<div class="hot-container">
@@ -105,7 +110,42 @@
 				</div>
 			</div>
 
+			<!--<div class="activity-container">
 
+				<h1>Activités à Marseille</h1>
+
+				<div>
+					<a href="lien.html" class="long">
+						<img src="images\hebergements\4_small\marcus-loke-WQJvWU_HZFo-unsplash.jpg">
+						<p class="nom">Vieux Port</p>
+					</a>
+					<a href="lien.html">
+						<img src="images\hebergements\4_small\marcus-loke-WQJvWU_HZFo-unsplash.jpg">
+						<p class="nom">Fort de Pomègues</p>
+					</a>
+					<a href="lien.html">
+						<img src="images\hebergements\4_small\marcus-loke-WQJvWU_HZFo-unsplash.jpg">
+						<p class="nom">Iles du Frioul</p>
+						
+					</a>
+					<a href="lien.html" class="long">
+						<img src="images\hebergements\4_small\marcus-loke-WQJvWU_HZFo-unsplash.jpg">
+						<p class="nom">Parc national des Calanques</p>
+						
+					</a>
+					<a href="lien.html">
+						<img src="images\hebergements\4_small\marcus-loke-WQJvWU_HZFo-unsplash.jpg">
+						<p class="nom">Notre-Dame-de-la-Garde</p>
+						
+					</a>
+					<a href="lien.html">
+						<img src="images\hebergements\4_small\marcus-loke-WQJvWU_HZFo-unsplash.jpg">
+						<p class="nom">Parc Longchamp</p>
+						
+					</a>
+				</div>
+
+			</div>-->
 
 
 		</section>
@@ -114,25 +154,25 @@
 			<div class="end-1">
 				<h2>A propos</h2>
 				<ul>
-					<li>Foncionnement du site</li>
-					<li>Conditions générales de ventes</li>
-					<li>Données et confidentialité</li>
+					<li><a href="#">Foncionnement du site</a></li>
+					<li><a href="#">Conditions générales de ventes</a></li>
+					<li><a href="#">Données et confidentialité</a></li>
 				</ul>
 			</div>
 
 			<div class="end-2">
 				<h2>Nos hébergements</h2>
 				<ul>
-					<li>Charte qualité</li>
-					<li>Soumettre votre hôtel</li>
+					<li><a href="#">Charte qualité</a></li>
+					<li><a href="#">Soumettre votre hôtel</a></li>
 				</ul>
 			</div>
 
 			<div class="end-3">
 				<h2>Assistance</h2>
 				<ul>
-					<li>Centre d'aide</li>
-					<li>Nous contacter</li>
+					<li><a href="#">Centre d'aide</a></li>
+					<li><a href="#">Nous contacter</a></li>
 				</ul>
 			</div>
 
