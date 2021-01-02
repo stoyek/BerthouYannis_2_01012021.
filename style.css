@@ -54,16 +54,15 @@ header div a{
 	display: flex;
 	border: 1px solid #377ead;
 	border-radius: 20px;
-	width: fit-content;
-}
-.eco{
 	padding: 10px;
+	width: fit-content;
+	
 }
-.icon{
-	height: 40px;
-	width: 40px;
-	border-radius: 40px;
-	background-color: #deebff;
+.filter img{
+	background-color: #377ead;
+	margin-right: 10px;
+	height: 17px;
+	width: 18px;
 }
 
 
