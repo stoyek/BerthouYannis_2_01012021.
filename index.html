@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		<script src="https://kit.fontawesome.com/c5737b68a5.js" crossorigin="anonymous"></script>
 		<link rel="stylesheet" type="text/css" href="style.css">
 		<meta charset="utf-8">
 		<title>Réservia</title>
@@ -15,34 +16,90 @@
 
 			<div>
 				
-				<a href="#">Hébergements</a>
-				<a href="#">Activités</a>
-				<a href="#">S'inscrire</a>
+				<a href="#" style="color: #0065fc;" class="housing">Hébergements</a>
+				<a href="#" style="color: black;">Activités</a>
+				<a href="#" style="color: #0065fc;">S'inscrire</a>
 				
 			</div>
 		</header>
 
-		<section class="search"><!---------------------- Recherche de lieux -->
+		<section class="search-container"><!---------------------- Recherche de lieux -->
 
 			<h1>Trouver un hébergement pour des vacances de rêve</h1>
 			<p>En plein centre ville ou en pleine nature</p>
 
-			<div class="rechercher">
+			<div class="search">
+				<img src="icone\map-marker-alt.svg">
+				<input type="bouton" value="Marseille, France">
+				<input type="Submit" value="Rechercher">
 			</div>
 
-			<div class="filter-section"><!---------------------- Filtrer la recherche -->
-				<h2>Filtres</h2>
+
+
+
+
+
+
+
+
+
+
+			<div class="filter-container"><!---------------------- Filtrer la recherche -->
+				<p>Filtres</p>
 					<div>
 						<div class="filter">
 							<img src="icone\money-bill-wave.svg">
-							<div class="eco">Economique</div>
+							<div class="circle"></div>
+							<p>Economique</p>
+						</div>
+						<div class="filter">
+							<img src="icone\child.svg">
+							<div class="circle"></div>
+							<p>Familial</p>
+						</div>
+						<div class="filter">
+							<img src="icone\heart.svg">
+							<div class="circle"></div>
+							<p>Romantique</p>
+						</div>
+						<div class="filter">
+							<img src="icone\dog.svg">
+							<div class="circle"></div>
+							<p>Animaux autorisés</p>
 						</div>
 					</div>
-				<p>Plus de 500 logements sont disponibles dans cette ville</p>
+
 			</div>
+
+			<div class="info">
+				<i class="fas fa-info"></i>
+				<div class="circle2"></div>
+				<p>Plus de 500 logements sont disponibles dans cette ville</p> 
+			</div>
+
 		</section>
 
 		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 		<section class="result"><!---------------------- Résultats de la recherche en 3 partie, Les hébergement trouvés, Les plus populaires et les activités en rapport avec le lieu de recherche -->
 		
 			<div class="result-container">
@@ -109,7 +166,7 @@
 				</div>
 			</div>
 
-			<div class="activity-container">
+			<!--<div class="activity-container">
 
 				<h1>Activités à Marseille</h1>
 
@@ -144,7 +201,7 @@
 					</a>
 				</div>
 
-			</div>
+			</div>-->
 
 
 		</section>
