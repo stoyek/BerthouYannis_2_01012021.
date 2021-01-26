@@ -36,12 +36,17 @@ section {
 header {
   position: relative;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   margin: 0px 35px;
   margin-bottom: 20px;
   height: 70px;
   font-size: 14px;
 }
+
+header :nth-child(1){
+  justify-content: flex-start;
+}
+
 header nav {
   display: flex;
   justify-content: space-between;
@@ -443,12 +448,12 @@ li a:hover {
   body {
     /* width: 90%; */
     /* margin: 0; */
-
   }
   section {
-    margin: 0px ;
+    margin: 0px;
   }
-  h1, h2{
+  h1,
+  h2 {
     font-size: 22px;
   }
   header {
@@ -456,108 +461,97 @@ li a:hover {
     height: auto;
   }
 
-  header nav a{
+  header nav a {
     box-sizing: border-box;
   }
-
-
 
   nav {
     flex-wrap: wrap;
     margin: 10px 0px;
   }
 
-
-  nav :nth-child(1){
+  nav :nth-child(1) {
     order: 1;
     width: 50%;
     object-fit: contain;
     height: 40px;
   }
-  nav :nth-child(4){
+  nav :nth-child(4) {
     order: 2;
     width: 50%;
   }
-  nav :nth-child(2){
+  nav :nth-child(2) {
     width: 50%;
     order: 3;
     color: #0065fc;
-    border-bottom:2px solid #0065fc;
+    border-bottom: 2px solid #0065fc;
   }
-  nav :nth-child(3){
+  nav :nth-child(3) {
     width: 50%;
     order: 4;
-    border-bottom:2px solid #f2f2f2;
+    border-bottom: 2px solid #f2f2f2;
   }
-  
-  .logo{
+
+  .logo {
     padding: 0px 10px;
     margin: 10px 0px;
     align-self: center;
   }
-  .nav_1{
+  .nav_1 {
     padding: 10px 0px;
     text-align: center;
   }
-  .nav_2{
+  .nav_2 {
     padding: 20px;
     margin: 0;
     text-align: end;
     align-self: center;
   }
 
-
-  .search-container{
+  .search-container {
     margin: 0px 20px;
   }
 
-  .filter-container p{
+  .filter-container p {
     width: 100%;
     margin: 0;
   }
 
-  .filter-container{
+  .filter-container {
     flex-wrap: wrap;
   }
 
-  .filter{
+  .filter {
     margin: 5px;
     margin-left: 0;
   }
 
-  .circle{
+  .circle {
     height: 50px;
     width: 50px;
     border-radius: 50px;
   }
 
-  .popular-container{
+  .popular-container {
     width: 100%;
     border-radius: 0;
     padding: 0px 20px;
     padding-bottom: 30px;
   }
 
-  .result-section h1{
+  .result-section h1 {
     margin: 30px 0px;
   }
 
-  .popular{
+  .popular {
     height: 100%;
   }
-  .popular a{
+  .popular a {
     margin-bottom: 15px;
     height: 130px;
   }
 
-
-
-
-
-
-
-
-  .housing-container{
+  .housing-container {
     width: 100%;
     order: 2;
     background-color: white;
@@ -565,27 +559,25 @@ li a:hover {
     padding: 20px;
   }
 
-  .result{
+  .result {
     height: 100%;
   }
 
-  .result a{
+  .result a {
     width: 100%;
     margin-bottom: 20px;
   }
 
-
-
-  .activity-container{
+  .activity-container {
     height: auto;
     margin: 0px 20px;
   }
 
-  .activity h1{
+  .activity h1 {
     margin: 0px 20px 30px 20px;
   }
-  
-  .activity-container a{
+
+  .activity-container a {
     width: 100%;
     margin-bottom: 20px;
   }
@@ -593,37 +585,31 @@ li a:hover {
   .activity-container a:first-child {
     height: 200px;
   }
-  
+
   .activity-container a:nth-child(2) {
     height: 200px;
   }
-  
+
   .activity-container a:nth-child(3) {
     height: 200px;
   }
-  
+
   .activity-container a:nth-child(4) {
     height: 200px;
   }
-  
+
   .activity-container a:nth-child(5) {
     height: 200px;
   }
-  
+
   .activity-container a:nth-child(6) {
     height: 200px;
   }
 
-
-
-
-
-
-  footer{
+  footer {
     padding: 20px;
     flex-direction: column;
     flex-wrap: wrap;
     height: auto;
   }
-
 }
