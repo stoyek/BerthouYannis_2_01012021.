@@ -1,0 +1,11 @@
+-- logo research for média qwerry <i class="fas fa-search"></i>
+
+- les cercles ne sont plus rond ?
+
+- Changer une ligne par une autre en html ? pour mettre le logo research
+
+- quel breakpoint ?
+
+- Activity-container -> Modifier tous les nth child en 1 ligne ?
+
+- désactiver les animations ?

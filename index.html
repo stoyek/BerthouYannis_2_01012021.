@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script
       src="https://kit.fontawesome.com/c5737b68a5.js"
       crossorigin="anonymous"
@@ -14,13 +15,13 @@
     <header>
       <!-- Logo & nav -->
 
-      <a class="logo" href="index.html">
-        <img src="images/logo/Reservia@3x.png" alt="Acceuil" />
-      </a>
-
       <nav>
-        <a href="#" class="nav_1">Hébergements</a>
-        <a href="#" class="nav_1">Activités</a>
+        <a class="logo" href="index.html">
+          <img src="images/logo/Reservia@3x.png" alt="Acceuil" />
+        </a>
+
+        <a href="#hebergement" class="nav_1">Hébergements</a>
+        <a href="#activiter" class="nav_1">Activités</a>
         <a href="#" class="nav_2">S'inscrire</a>
       </nav>
     </header>
@@ -28,7 +29,7 @@
     <section class="search-container">
       <!-- La recherche -->
 
-      <h1>Trouver un hébergement pour des vacances de rêve</h1>
+      <h1>Trouver votre hébergement pour des vacances de rêve</h1>
       <p>En plein centre ville ou en pleine nature</p>
 
       <div class="search">
@@ -38,8 +39,11 @@
       </div>
 
       <div class="filter-container">
+        
         <!-- Les filtres -->
+
         <p>Filtres</p>
+
         <div class="filter">
           <div class="circle">
             <i class="fas fa-money-bill-wave"></i>
@@ -70,8 +74,10 @@
       </div>
 
       <div class="info">
-        <i class="fas fa-info"></i>
-        <div class="circle2"></div>
+        
+        <div class="circle2">
+          <i class="fas fa-info"></i>
+        </div>
         <p>Plus de 500 logements sont disponibles dans cette ville</p>
       </div>
     </section>
@@ -80,7 +86,8 @@
     <section class="result-section">
       <!-- Les hebergement -->
       <div class="housing-container">
-        <h1>Hébergements à Marseille</h1>
+
+        <h1 id="hebergement">Hébergements à Marseille</h1>
 
         <div class="result">
           <a href="lien.html">
@@ -200,7 +207,11 @@
       <!-- Les plus populaires -->
 
       <div class="popular-container">
-        <h1>Les plus populaires</h1>
+
+        <div class="title-popular">
+          <h1>Les plus populaires</h1>
+          <i class="fas fa-chart-line"></i>
+        </div>
 
         <div class="popular">
           <a href="lien.html">
@@ -209,14 +220,20 @@
             />
 
             <div class="info-popular">
-              <p class="nom">Hôtel Le soleil du matin</p>
-              <p class="prix">Nuit à partie de 128€</p>
-              <div class="star">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
+
+              <div class="legend">
+                <p class="nom">Hôtel Le soleil du matin</p>
+                <p class="prix">Nuit à partie de 128€</p>
+              </div>
+
+              <div>
+                <div class="star">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
               </div>
             </div>
 
@@ -227,15 +244,22 @@
             />
 
             <div class="info-popular">
-              <p class="nom">Au coeur de l'eau Chambres d'hôtes</p>
-              <p class="prix">Nuit à partie de 71€</p>
-              <div class="star">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
+
+              <div class="legend">
+                <p class="nom">Au coeur de l'eau Chambres d'hôtes</p>
+                <p class="prix">Nuit à partie de 71€</p>
               </div>
+
+              <div>
+                <div class="star">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+              </div>
+
             </div>
 
           </a>
@@ -246,15 +270,22 @@
             />
 
             <div class="info-popular">
-              <p class="nom">Hôtel tous bleu et blanc</p>
-              <p class="prix">Nuit à partie de 68€</p>
-              <div class="star">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
+
+              <div class="legend">
+                <p class="nom">Hôtel tous bleu et blanc</p>
+                <p class="prix">Nuit à partie de 68€</p>
               </div>
+
+              <div>
+                <div class="star">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+              </div>
+
             </div>
 
           </a>
@@ -263,8 +294,9 @@
     </section>
 
     <section class="activity">
+      
       <!-- Les activités -->
-      <h1>Activités à Marseille</h1>
+      <h1 id="activiter">Activités à Marseille</h1>
 
       <div class="activity-container">
 
