@@ -279,6 +279,7 @@ header .nav_1:hover {
 .star {
   display: flex;
   transition: 0.2s;
+  color: #0065fc;
 }
 .grey{
   color: #cccccc;
