@@ -11,3 +11,7 @@
 - Activity-container -> Modifier tous les nth child en 1 ligne ?
 
 - désactiver les animations ?
+
+-display: none
+
+- cursor pointer

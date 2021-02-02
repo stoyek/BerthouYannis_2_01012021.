@@ -27,7 +27,7 @@ p {
   margin: 0;
 }
 section {
-  margin: 20px 35px;
+  margin: 40px 35px;
   margin-top: 0%;
 }
 
@@ -36,21 +36,17 @@ section {
 header {
   position: relative;
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   margin: 0px 35px;
   margin-bottom: 20px;
   height: 70px;
   font-size: 14px;
 }
 
-header :nth-child(1){
-  justify-content: flex-start;
-}
-
 header nav {
   display: flex;
-  justify-content: space-between;
 }
+
 header nav a {
   padding: 0px 20px;
   padding-top: 40px;
@@ -70,11 +66,14 @@ header .nav_1:hover {
   color: #0065fc;
 }
 
-.logo {
+.logo_desktop {
   align-self: flex-end;
 }
-.logo img {
-  max-height: 35px;
+.logo_desktop img {
+  max-height: 45px;
+}
+.logo_mobile {
+  display: none;
 }
 
 /* La recherche */
@@ -93,7 +92,9 @@ header .nav_1:hover {
   outline: none;
   width: 180px;
 }
+
 .search button {
+  cursor: pointer;
   outline: none;
   border: none;
   border-radius: 0px 15px 15px 0px;
@@ -101,8 +102,15 @@ header .nav_1:hover {
   color: white;
   font-weight: bold;
   width: 100px;
+  transition: color .2s, border 0s;
 }
-.search i {
+
+.search button:hover{
+  color: black;
+  border: 1px solid #F2F2F2;
+}
+
+.fa-map-marker-alt {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -113,6 +121,10 @@ header .nav_1:hover {
   border-radius: 15px 0px 0px 15px;
 }
 
+.but_mobile {
+  display: none;
+}
+
 /* Les filtres */
 
 .filter-container {
@@ -120,17 +132,18 @@ header .nav_1:hover {
   display: flex;
 }
 .filter {
+  cursor: pointer;
   margin: 0px 10px;
   display: flex;
   border: 2px solid #f2f2f2;
   border-radius: 20px;
   border-left: none;
-  transition: border 0.2s 0.1s;
+  transition: border 0.2s 0.2s;
 }
 .filter i {
   color: #0065fc;
   margin: auto;
-  transition: 0.5s;
+  transition: 0.3s;
 }
 
 .circle {
@@ -140,7 +153,7 @@ header .nav_1:hover {
   border-radius: 30px;
   height: 40px;
   width: 40px;
-  transition: border 0.5s, transform 0.5s 0.3s;
+  transition: 0.3s;
 }
 
 .filter-container p {
@@ -149,7 +162,7 @@ header .nav_1:hover {
 }
 .filter p {
   padding: 0px 15px;
-  transition: color 0.5s;
+  transition: 0.5s;
 }
 
 .filter:hover i {
@@ -158,11 +171,11 @@ header .nav_1:hover {
 
 .filter:hover p {
   /* padding: 0px 25px; */
-  /* color: #0065fc; */
+  color: #0065fc;
 }
 .filter:hover {
   background-color: #deebff;
-  border: 2px solid #deebff;
+  border-color: #deebff;
 }
 
 .info {
@@ -220,7 +233,7 @@ header .nav_1:hover {
   width: 31%;
   height: 200px;
   border-radius: 20px;
-  box-shadow: 2px 2px 30px rgb(168, 168, 168);
+  box-shadow: 0px 0px 10px rgb(168, 168, 168);
   margin-bottom: 30px;
 }
 
@@ -238,9 +251,9 @@ header .nav_1:hover {
   flex-direction: column;
   justify-content: space-between;
   object-fit: cover;
-  width: 100%;
+  width: 90%;
   height: 32%;
-  margin: 0px 5px;
+  margin: 0px 15px;
   transition: cubic-bezier(0.81, 0.15, 0.21, 0.88) 0.3s 0.1s;
 }
 
@@ -267,6 +280,9 @@ header .nav_1:hover {
   display: flex;
   transition: 0.2s;
 }
+.grey{
+  color: #cccccc;
+}
 
 .more {
   margin: 15px 0px 30px 0px;
@@ -279,7 +295,6 @@ header .nav_1:hover {
 .result a:hover img {
   height: 80%;
   border-radius: 20px;
-  padding: 2px;
 }
 .result a:hover .info-house {
   margin-top: 5px;
@@ -328,7 +343,7 @@ header .nav_1:hover {
   border-radius: 20px;
   display: flex;
   flex-flow: wrap column;
-  box-shadow: 2px 2px 30px rgb(168, 168, 168);
+  box-shadow: 0px 0px 10px rgb(168, 168, 168);
   overflow: hidden;
 }
 .popular a img {
@@ -357,7 +372,6 @@ header .nav_1:hover {
 .popular a:hover img {
   width: 60%;
   border-radius: 20px;
-  padding: 3px;
 }
 .popular a:hover .legend {
   width: 70%;
@@ -373,6 +387,10 @@ header .nav_1:hover {
   justify-content: space-between;
   align-content: space-between;
   height: 500px;
+}
+
+.activity h1{
+  margin: 20px 0px;
 }
 
 .activity-container a:first-child {
@@ -404,7 +422,7 @@ header .nav_1:hover {
   flex-direction: column;
   width: 22%;
   border-radius: 20px;
-  box-shadow: 2px 2px 30px rgb(168, 168, 168);
+  box-shadow: 0px 0px 10px rgb(168, 168, 168);
 }
 .activity-container img {
   flex-grow: 1;
@@ -412,6 +430,7 @@ header .nav_1:hover {
   width: 100%;
   border-radius: 20px 20px 0px 0px;
   object-fit: cover;
+  transition: .1s;
 }
 .activity-container p {
   margin: 0%;
@@ -419,8 +438,12 @@ header .nav_1:hover {
   height: 50px;
 }
 
+.activity-container :hover img{
+  padding: 2px;
+}
+
 footer {
-  margin-top: 20px;
+  margin-top: 40px;
   padding-left: 50px;
   padding-right: 25%;
   display: flex;
@@ -444,7 +467,7 @@ li a:hover {
   color: #0065fc;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 651px) {
   body {
     /* width: 90%; */
     /* margin: 0; */
@@ -456,6 +479,17 @@ li a:hover {
   h2 {
     font-size: 22px;
   }
+
+  .logo_desktop {
+    display: none;
+  }
+  .logo_mobile {
+    display: flex;
+    padding: 0px 10px;
+    margin: 10px 0px;
+    align-self: center;
+  }
+
   header {
     margin: 0%;
     height: auto;
@@ -466,15 +500,15 @@ li a:hover {
   }
 
   nav {
+    width: 100%;
     flex-wrap: wrap;
     margin: 10px 0px;
   }
 
   nav :nth-child(1) {
+    height: 45px;
     order: 1;
     width: 50%;
-    object-fit: contain;
-    height: 40px;
   }
   nav :nth-child(4) {
     order: 2;
@@ -492,11 +526,6 @@ li a:hover {
     border-bottom: 2px solid #f2f2f2;
   }
 
-  .logo {
-    padding: 0px 10px;
-    margin: 10px 0px;
-    align-self: center;
-  }
   .nav_1 {
     padding: 10px 0px;
     text-align: center;
@@ -508,13 +537,42 @@ li a:hover {
     align-self: center;
   }
 
+  /* Recherche moble  */
+
+
   .search-container {
     margin: 0px 20px;
   }
 
+  .but_desk{
+    display: none;
+  }
+
+  .but_mobile{
+    display: inline-block;
+  }
+
+  .search button {
+    padding: 0%;
+    border-radius: 15px;
+    font-weight: bold;
+    width: 42px;
+    margin-left: -15px;
+  }
+
+  .search input[type="search"] {
+    width: 70%;
+  }
+
+  /* Filtre mobile  */
+
+
+
   .filter-container p {
-    width: 100%;
     margin: 0;
+  }
+  .w_mobile{
+    width: 100%;
   }
 
   .filter-container {
@@ -526,11 +584,13 @@ li a:hover {
     margin-left: 0;
   }
 
-  .circle {
-    height: 50px;
-    width: 50px;
-    border-radius: 50px;
+  filter :hover{
+    display: none;
   }
+
+  /* Les plus populaires mobile  */
+
+
 
   .popular-container {
     width: 100%;
@@ -612,4 +672,155 @@ li a:hover {
     flex-wrap: wrap;
     height: auto;
   }
+}
+
+@media screen and (min-width: 652px) and (max-width: 1199px) {
+  
+
+
+  section{
+    margin: 0%;
+  }
+  /* Research */
+
+
+  .search-container {
+    margin: 0px 20px;
+  }
+
+  .but_desk{
+    display: none;
+  }
+
+  .but_mobile{
+    display: inline-block;
+  }
+
+  .search button {
+    padding: 0%;
+    border-radius: 15px;
+    font-weight: bold;
+    width: 42px;
+    margin-left: -15px;
+  }
+
+  /* filter */
+
+
+  .filter-container p {
+    margin: 0;
+  }
+  .w_mobile{
+    width: 100%;
+  }
+
+  .filter-container {
+    flex-wrap: wrap;
+  }
+
+  .filter {
+    margin: 10px;
+    margin-left: 0;
+  }
+
+  filter :hover{
+    display: none;
+  }
+
+  /* Popular */
+  
+  
+  .popular-container {
+    background-color: white;
+    width: 100%;
+    border-radius: 0;
+    padding: 0px 20px;
+    padding-bottom: 30px;
+  }
+
+  .result-section h1 {
+    margin: 30px 0px;
+  }
+  
+  .popular {
+    flex-direction: row;
+    height: 100%;
+  }
+
+  .popular a {
+    margin-bottom: 15px;
+    height: 130px;
+    width: 30%;
+  }
+
+  /* Housing  */
+
+  .housing-container {
+    width: 100%;
+    order: 2;
+    justify-content: flex-start;
+    padding: 20px;
+    border-radius: 0%;
+  }
+
+  .result a {
+    width: 30%;
+    margin-bottom: 20px;
+  }
+
+  /* Activity  */
+
+  .activity{
+    padding: 0px 20px;
+    /* background-color: #f2f2f2; */
+  }
+  .activity-container {
+    height: auto;
+    flex-flow: row wrap;
+  }
+
+  .activity h1 {
+    margin: 30px 0px;
+  }
+
+  .activity-container a {
+    width: 30%;
+    margin-bottom: 20px;
+  }
+
+  .activity-container a:nth-child(1) {
+    height: 170px;
+  }
+
+  .activity-container a:nth-child(2) {
+    height: 170px;
+  }
+
+  .activity-container a:nth-child(3) {
+    height: 170px;
+  }
+
+  .activity-container a:nth-child(4) {
+    height: 170px;
+  }
+
+  .activity-container a:nth-child(5) {
+    height: 170px;
+  }
+
+  .activity-container a:nth-child(6) {
+    height: 170px;
+  }
+
+
+}
+
+@media screen and (min-width: 652px) and (max-width: 927px) {
+  .nom{
+    font-size: 12px;
+  }
+  .prix{
+    font-size: 12px;
+  }
+
 }
