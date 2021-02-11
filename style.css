@@ -15,6 +15,7 @@
   box-sizing: border-box;
 }
 body {
+  height: 100vh;
   margin: 0;
 }
 h1,
@@ -55,11 +56,11 @@ header nav a {
 }
 .border_nav{
   padding: 45px 20px;
+  color: black;
 }
 .nav_1 {
   padding-top: 30px;
   transition: 0.3s;
-  color: black;
 }
 .nav_2 {
   padding-top: 30px;
@@ -209,7 +210,7 @@ header .border_nav:hover {
   justify-content: space-between;
 }
 
-.result-section h1 {
+.result-section h2 {
   margin: 30px 0px;
 }
 
@@ -380,6 +381,10 @@ header .border_nav:hover {
   justify-content: space-around;
 }
 
+.popular p{
+  white-space: normal;
+}
+
 
 /* Activités à marseille */
 
@@ -392,7 +397,7 @@ header .border_nav:hover {
   height: 500px;
 }
 
-.activity h1{
+.activity h2{
   margin: 20px 0px;
 }
 
@@ -479,8 +484,12 @@ li a:hover {
   padding: 20px;
   border-radius: 20px;
   width: 70%;
-  background-color: #F2F2F2;
   font-size: 20px;
+  background-color: #F2F2F2;
+}
+
+.dead{
+  height: 55%;
 }
 
 .deadlien p{
@@ -499,7 +508,7 @@ li a:hover {
 
 @media screen and (max-width: 415px) {
 
-  
+
   body {
     /* width: 90%; */
     /* margin: 0; */
@@ -521,7 +530,13 @@ li a:hover {
   header {
     margin: 0px;
     height: auto;
+    position: fixed;
+    background-color: #ffffff;
+    width: 100%;
+    top: 0;
   }
+
+
 
   header nav a {
     box-sizing: border-box;
@@ -530,29 +545,36 @@ li a:hover {
   nav {
     width: 100%;
     flex-wrap: wrap;
-    margin: 10px 0px;
+    margin-top: 10px;
     justify-content: flex-end;
   }
 
 
 
   .border_nav{
-    padding: 0%;
+    padding: 10px 0px;
+    width: 50%;
+    border-bottom:2px solid #f2f2f2;
   }
 
   .nav_1 {
+    padding-top: 0px;
     display: flex;
-    padding: 10px 0px;
     margin: 0%;
     text-align: center;
     width:100%;
     order: 2;
     justify-content: space-around;
-    border-bottom:2px solid #f2f2f2;
   }
   .nav_2 {
     padding: 20px;
     margin: 0;
+  }
+
+  header .border_nav:hover {
+    border-top: 0;
+    border-bottom: 2px solid #0065fc;
+    color: #0065fc;
   }
 
   /* Recherche moble  */
@@ -636,7 +658,7 @@ li a:hover {
     padding-bottom: 30px;
   }
 
-  .result-section h1 {
+  .result-section h2 {
     margin: 30px 0px;
   }
 
@@ -675,7 +697,7 @@ li a:hover {
     margin: 0px 20px;
   }
 
-  .activity h1 {
+  .activity h2 {
     margin: 0px 20px 30px 20px;
   }
 
@@ -718,7 +740,7 @@ li a:hover {
 
 
 
-@media screen and (min-width: 415px) and (max-width: 1199px) {
+@media screen and (min-width: 415px) and (max-width: 1024px) {
   
 
 
@@ -784,7 +806,7 @@ li a:hover {
     padding-bottom: 30px;
   }
 
-  .result-section h1 {
+  .result-section h2 {
     margin: 30px 0px;
   }
   
@@ -849,7 +871,7 @@ li a:hover {
     flex-flow: row wrap;
   }
 
-  .activity h1 {
+  .activity h2 {
     margin: 30px 0px;
   }
 
@@ -882,5 +904,8 @@ li a:hover {
     height: 170px;
   }
 
+  footer{
+    padding-right: 15%;
+  }
 
 }
